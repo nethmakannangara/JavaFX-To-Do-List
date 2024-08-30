@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="374.0" prefWidth="434.0" style="-fx-background-color: #111015;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="32.0" prefHeight="68.0" prefWidth="303.0" text="Never Give Up" textFill="WHITE">
+         <font>
+            <Font name="Century Schoolbook" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnTodayPlans" layoutX="118.0" layoutY="138.0" onAction="#btnTodayPlansOnAction" prefHeight="27.0" prefWidth="184.0" text="Today Plans" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnWorkingHistory" layoutX="119.0" layoutY="196.0" onAction="#btnWorkingHistoryOnAction" prefHeight="27.0" prefWidth="184.0" text="Working History" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="280.0" layoutY="272.0" onAction="#btnCancelOnAction" prefHeight="27.0" prefWidth="95.0" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="15.0" />
+         </font>
+      </JFXButton>
+      <Line endX="100.0" layoutX="10.0" layoutY="10.0" startX="-100.0" />
+      <Line endX="234.0" layoutX="141.0" layoutY="91.0" startX="-100.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

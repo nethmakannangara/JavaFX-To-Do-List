@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="848.0" style="-fx-background-color: #484a61; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageFormController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="534.0" layoutX="401.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #fdfafd;" width="436.0" />
+      <Label layoutX="40.0" layoutY="84.0" prefHeight="46.0" prefWidth="332.0" text="Hi Sumanapala Wikramasinhga" textFill="WHITE">
+         <font>
+            <Font name="Footlight MT Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="137.0" text="Welcome back some work to be done :-)" textFill="#f8f8f8">
+         <font>
+            <Font name="Malgun Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#111015" height="60.0" layoutX="31.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="344.0" />
+      <Circle fill="DODGERBLUE" layoutX="63.0" layoutY="51.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="94.0" layoutY="20.0" prefHeight="29.0" prefWidth="255.0" text="Sumanapala Wikramasinha" textFill="WHITE">
+         <font>
+            <Font name="Wingdings 3" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="49.0" prefHeight="23.0" prefWidth="209.0" text="sumanapalawikramasinha@gmail.com" textFill="WHITE">
+         <font>
+            <Font name="Serif Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="178.0" text="Todo :" textFill="WHITE">
+         <font>
+            <Font name="Perpetua Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="523.0" layoutY="28.0" prefHeight="46.0" prefWidth="193.0" text="Today">
+         <font>
+            <Font name="Poor Richard" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#606263" height="351.0" layoutX="420.0" layoutY="137.0" stroke="WHITE" strokeType="INSIDE" style="-fx-opacity: 25%;" width="400.0" />
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="510.0" layoutY="84.0" prefHeight="29.0" prefWidth="242.0">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listViewToD0" layoutX="37.0" layoutY="203.0" prefHeight="297.0" prefWidth="332.0" style="-fx-background-color: #484a61;" stylesheets="@../style%20sheet/listView.css" />
+      <JFXListView fx:id="listViewDone" layoutX="434.0" layoutY="155.0" prefHeight="316.0" prefWidth="371.0" style="-fx-background-color: dfe0e0; -fx-background-radius: 20px;" />
+      <TextField fx:id="txtToDo" layoutX="35.0" layoutY="520.0" prefHeight="25.0" prefWidth="295.0" promptText="Add Task">
+         <font>
+            <Font name="MS Outlook" size="13.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnAddTask" layoutX="343.0" layoutY="520.0" onAction="#btnAddTaskOnAction" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #25a678;" text="ADD" textFill="#ebebeb">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

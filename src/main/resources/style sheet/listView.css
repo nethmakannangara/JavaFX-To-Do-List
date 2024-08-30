@@ -1,0 +1,64 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global Styles */
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 15px; /* Global font size */
+}
+
+/* Styling for ListView */
+.list-view {
+    -fx-background-color: #484a61; /* Background color of ListView */
+    -fx-border-color: #383b4b; /* Slightly darker border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px; /* Add padding around the ListView */
+}
+
+/* Styling for ListCells */
+.list-cell {
+    -fx-background-color: #484a61; /* Background color of ListCell */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 10px; /* Padding inside each cell */
+    -fx-border-color: #383b4b; /* Border color */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-border-radius: 5px;
+    -fx-alignment: center-left; /* Align CheckBox and text to the left */
+    -fx-font-size: 15px; /* Font size for ListCell */
+    -fx-font-weight: 400;
+    -fx-margin: 0 0 10px 0; /* Margin for gap between rows */
+}
+
+/* Styling for CheckBoxes in ListCell */
+.check-box {
+    -fx-font-size: 15px; /* Font size for CheckBox */
+    -fx-text-fill: white; /* Ensure CheckBox text remains white */
+    -fx-padding: 0 10px; /* Space around CheckBox */
+}
+
+/* CheckBox styling */
+.check-box .box {
+    -fx-background-color: #ffffff; /* Background color of CheckBox */
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #007bff;
+    -fx-border-color: #007bff;
+}
+
+/* Highlighting selected ListCells */
+.list-cell:filled:selected {
+    -fx-background-color: #007bff; /* Highlight color for selected item */
+    -fx-text-fill: white; /* Text color when selected */
+}
+
+/* Styling for ListCell on mouse hover */
+.list-cell:hover {
+    -fx-background-color: #60637d; /* Slightly lighter background on hover */
+    -fx-text-fill: white; /* Ensure text remains white on hover */
+}
